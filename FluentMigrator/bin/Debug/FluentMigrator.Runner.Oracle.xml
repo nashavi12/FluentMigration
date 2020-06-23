@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentMigrator.Runner.Oracle</name>
+    </assembly>
+    <members>
+        <member name="M:FluentMigrator.Runner.Generators.Oracle.Oracle12CColumn.#ctor(FluentMigrator.Runner.Generators.IQuoter)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Oracle.Oracle12CColumn.FormatIdentity(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Oracle.Oracle12CColumn.FormatNullable(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Oracle.OracleColumn.FormatIdentity(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Oracle.OracleColumn.FormatNullable(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Oracle.OracleColumn.GetPrimaryKeyConstraintName(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Runner.OracleRunnerBuilderExtensions">
+            <summary>
+            Extension methods for <see cref="T:FluentMigrator.Runner.IMigrationRunnerBuilder"/>
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.RegisterOracleQuoter(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Register Oracle quoter
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.RegisterOracleGenerator(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Register Oracle generator
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.RegisterOracle12CGenerator(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Register Oracle 12c generator
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.RegisterOracleProcessor``1(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Register Oracle processor dependencies
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.RegisterOracleManagedProcessor``1(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Register Oracle managed processor dependencies
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.RegisterDotConnectOracleProcessor``1(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Register dotConnection Oracle processor dependencies
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds Oracle support
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracleManaged(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds managed Oracle support
+            </summary>
+            <param name="builder">The builder to add the managed Oracle-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds .Connect Oracle support
+            </summary>
+            <param name="builder">The builder to add the .Connect Oracle-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds Oracle 12c support
+            </summary>
+            <param name="builder">The builder to add the Oracle-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds managed Oracle 12c support
+            </summary>
+            <param name="builder">The builder to add the managed Oracle-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds .Connect Oracle 12c support
+            </summary>
+            <param name="builder">The builder to add the .Connect Oracle-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="T:FluentMigrator.Runner.ProcessorOptionsExtensions">
+            <summary>
+            Extension methods for <see cref="T:FluentMigrator.Runner.Processors.ProcessorOptions"/>
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.ProcessorOptionsExtensions.IsQuotingForced(FluentMigrator.Runner.Processors.ProcessorOptions)">
+            <summary>
+            Returns a value indicating whether quoted identifiers are enforced
+            </summary>
+            <param name="options">The processor options</param>
+            <returns><c>true</c> when quoted identifiers are enforced</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.ProcessorOptionsExtensions.Quoted(System.String)">
+            <summary>
+            Returns a value indicating whether quoted identifiers are enforced
+            </summary>
+            <param name="options">The provider switches</param>
+            <returns><c>true</c> when quoted identifiers are enforced</returns>
+        </member>
+        <member name="T:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor">
+            <summary>
+            A processor for Oracle 12c using the DotConnect database access library
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,Microsoft.Extensions.Logging.ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor},Microsoft.Extensions.Options.IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor"/> class.
+            </summary>
+            <param name="factory">The DB object factory</param>
+            <param name="generator">The SQL generator</param>
+            <param name="logger">The logger</param>
+            <param name="options">The processor options</param>
+            <param name="connectionStringAccessor">The accessor for the connection strings</param>
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor">
+            <summary>
+            A processor for Oracle 12c using the managed database access library
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,Microsoft.Extensions.Logging.ILogger{FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor},Microsoft.Extensions.Options.IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor"/> class.
+            </summary>
+            <param name="factory">The DB object factory</param>
+            <param name="generator">The SQL generator</param>
+            <param name="logger">The logger</param>
+            <param name="options">The processor options</param>
+            <param name="connectionStringAccessor">The accessor for the connection strings</param>
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor">
+            <summary>
+            A processor for Oracle 12c using the .NET database access library
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,Microsoft.Extensions.Logging.ILogger{FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor},Microsoft.Extensions.Options.IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor"/> class.
+            </summary>
+            <param name="factory">The DB object factory</param>
+            <param name="generator">The SQL generator</param>
+            <param name="logger">The logger</param>
+            <param name="options">The processor options</param>
+            <param name="connectionStringAccessor">The accessor for the connection strings</param>
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

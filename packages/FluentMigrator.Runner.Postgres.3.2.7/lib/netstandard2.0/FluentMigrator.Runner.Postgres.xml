@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentMigrator.Runner.Postgres</name>
+    </assembly>
+    <members>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres92.Postgres92TypeMap.SetupTypeMaps">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres.PostgresColumn.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,FluentMigrator.Runner.Generators.ITypeMap)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FluentMigrator.Runner.Generators.Postgres.PostgresColumn"/> class.
+            </summary>
+            <param name="quoter">The Postgres quoter.</param>
+            <param name="typeMap">The Postgres type map.</param>
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres.PostgresColumn.FormatNullable(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres.PostgresColumn.FormatIdentity(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres.PostgresColumn.AddPrimaryKeyConstraint(System.String,System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition})">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres.PostgresColumn.FormatType(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator">
+            <summary>
+            almost copied from OracleDescriptionGenerator,
+            modified for escaping table description
+            </summary>
+        </member>
+        <member name="F:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter._keywords">
+            <summary>
+            https://www.postgresql.org/docs/current/sql-keywords-appendix.html
+            <para>select * from pg_get_keywords() where catcode != 'U'</para>
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Runner.PostgresRunnerBuilderExtensions">
+            <summary>
+            Extension methods for <see cref="T:FluentMigrator.Runner.IMigrationRunnerBuilder"/>
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds Postgres support
+            </summary>
+            <param name="builder">The builder to add the Postgres-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds Postgres 9.2 support
+            </summary>
+            <param name="builder">The builder to add the Postgres-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddCommonPostgresServices(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Add common Postgres services.
+            </summary>
+            <param name="builder">The builder to add the Postgres-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote">
+            <summary>
+            Gets or sets a value indicating whether all names should be quoted unconditionally.
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
